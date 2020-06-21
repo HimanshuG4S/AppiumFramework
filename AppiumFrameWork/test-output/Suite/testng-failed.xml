@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="resources.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="practice.AppiumFrameWork.ApiDemoTest">
+        <methods>
+          <include name="ApiTest"/>
+        </methods>
+      </class> <!-- practice.AppiumFrameWork.ApiDemoTest -->
+      <class name="practice.AppiumFrameWork.Ecommerce_TC_4">
+        <methods>
+          <include name="totolValidation"/>
+          <include name="KillAllNodes"/>
+          <include name="killEmulator"/>
+        </methods>
+      </class> <!-- practice.AppiumFrameWork.Ecommerce_TC_4 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
