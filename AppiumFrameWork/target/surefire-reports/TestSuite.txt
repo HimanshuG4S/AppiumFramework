@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 365.77 s <<< FAILURE! - in TestSuite
-practice.AppiumFrameWork.Ecommerce_TC_4.totolValidation  Time elapsed: 207.063 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 75.126 s <<< FAILURE! - in TestSuite
+practice.AppiumFrameWork.Ecommerce_TC_4.totolValidation  Time elapsed: 47.333 s  <<< FAILURE!
 java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 	at practice.AppiumFrameWork.Ecommerce_TC_4.totolValidation(Ecommerce_TC_4.java:62)
 

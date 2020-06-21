@@ -22,6 +22,7 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 public class Base {
 	public static AppiumDriverLocalService service;
 	public static AndroidDriver<AndroidElement> driver;
+	public static String device; 
 	
 	public AppiumDriverLocalService startServer() {
 	boolean flag = checkIfServerIsRunnning(4723);
@@ -56,11 +57,11 @@ public class Base {
 
 //		String device = (String) prop.get("Device");
 		
-		String device = System.getProperty("deviceName");
+	    device = System.getProperty("deviceName");
 		
-		if(!device.contains("Android"))
+		if(device.contains("Emulator")) {
 			startEmulator();
-		
+		}
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, device);
 		
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");

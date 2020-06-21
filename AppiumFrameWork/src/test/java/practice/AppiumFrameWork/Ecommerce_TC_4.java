@@ -104,11 +104,12 @@ service.stop();
 
 @AfterTest
 public void killEmulator() throws IOException, InterruptedException {
-
-//	stopEmulator();
 	
+	String d = new Base().device;
+   if(d.contains("Emulator")) {
+	   stopEmulator();
 }
-
+}
 public static double getAmount(String value)
 
 {
